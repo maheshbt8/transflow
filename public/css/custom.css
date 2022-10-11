@@ -1,0 +1,313 @@
+main {
+    background-color: #d6d9de;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #2f353a;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #262a2e;
+}
+
+.ck-editor__editable,
+textarea {
+    min-height: 150px;
+}
+
+.datatable {
+    width: 100% !important;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dt-buttons {
+    margin-bottom: 0.333em;
+    margin-top: .2rem;
+}
+
+.dataTables_filter {
+    margin-right: .2rem;
+}
+
+.dt-buttons .btn {
+    margin-left: 0.333em;
+    border-radius: 0;
+}
+
+.table.datatable {
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+table.dataTable thead th {
+    border-bottom: 2px solid #c8ced3;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 1px solid #c8ced3;
+}
+
+.select2 {
+    max-width: 100%;
+    width: 100% !important;
+}
+
+.select2-selection__rendered {
+    padding-bottom: 5px !important;
+}
+
+.has-error .invalid-feedback {
+    display: block !important;
+}
+
+.btn-info,
+.badge-info {
+    color: white;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background-image: none;
+}
+
+.sidebar .nav-item {
+    cursor: pointer;
+}
+
+.btn-default {
+    color: #23282c;
+    background-color: #f0f3f5;
+    border-color: #f0f3f5;
+}
+
+.btn-default.focus,
+.btn-default:focus {
+    box-shadow: 0 0 0 .2rem rgba(209, 213, 215, .5);
+}
+
+.btn-default:hover {
+    color: #23282c;
+    background-color: #d9e1e6;
+    border-color: #d1dbe1;
+}
+
+.btn-group-xs>.btn,
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.searchable-title {
+    font-weight: bold;
+}
+
+.searchable-fields {
+    padding-left: 5px;
+}
+
+.searchable-link {
+    padding: 0 5px 0 5px;
+}
+
+.searchable-link:hover {
+    cursor: pointer;
+    background: #eaeaea;
+}
+
+.select2-results__option {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.form-group label.required:after {
+    color: red;
+    content: "*";
+}
+
+.ui-widget-content .ui-menu-item {
+    background-color: #20a8d8;
+    border: 1px solid #23282c;
+}
+
+
+/* Custom Css on 27th july 2020 */
+
+body {
+    background-color: #ffffff;
+}
+
+#img_logo_block {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.app-header {
+    background-color: #2f353a;
+    border-bottom: 0px solid #c8ced3;
+}
+
+#header_logo {
+    height: 25px;
+    margin: 10px;
+}
+
+.files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    padding: 120px 0px 85px 35%;
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+}
+
+.files input:focus {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    border: 1px solid #92b0b3;
+}
+
+.files {
+    position: relative
+}
+
+.files:after {
+    pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.color input {
+    background-color: #f1f1f1;
+}
+
+.files:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 57px;
+    content: " or drag it here. ";
+    display: block;
+    margin: 0 auto;
+    color: #2ea591;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+a.nav-link,
+a.nav-link:hover {
+    color: #fff !important;
+}
+
+.sidebar .nav-dropdown-items .nav-item {
+    padding: 0px 10px 1px 5px;
+    background-color: #585a5c;
+}
+
+.col-form-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0px 0px opx 15px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    #header_logo {
+        height: 16px;
+    }
+    main {
+        margin: 0px -20px 0px -20px;
+    }
+    .d-md-down-none {
+        display: contents !important;
+    }
+}
+
+table.dataTable tbody td.select-checkbox:before,
+table.dataTable tbody th.select-checkbox:before {
+    visibility: hidden !important;
+}
+
+table.dataTable tbody td.td_check_show:before,
+table.dataTable tbody th.td_check_show:before {
+    visibility: visible !important;
+}
+
+.nav-tabs .invoice_link.active {
+    color: #2f353a !important;
+}
+
+.nav-tabs .invoice_link {
+    color: #73818f !important;
+}
+
+a.invoice_link:hover {
+    color: #73818f !important;
+}
+/*.table-responsive,.dataTables_scrollBody,.dataTables_scroll{
+    overflow: inherit !important;
+}*/
+/*.dataTables_scrollBody{
+    overflow-x: auto !important;
+}*/
+/*.dataTables_scroll
+{
+  white-space: nowrap !important;
+  overflow-x: visible !important;
+  overflow-y: hidden !important;
+  width: 100% !important; 
+}*/
+table .dropdown-menu.show{
+    max-height: 200px !important;
+    overflow-y: auto;
+    display: block;
+    z-index:1
+}

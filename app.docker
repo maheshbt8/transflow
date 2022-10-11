@@ -1,0 +1,18 @@
+FROM php:7.4.0-fpm
+
+RUN apt-get update && apt-get install -y python3 python3-pip zip unzip zlib1g-dev libzip-dev poppler-utils libjpeg62-turbo-dev libfreetype6-dev libxml2-dev libpng-dev libmcrypt-dev git default-mysql-client \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install pdo_mysql \
+    && docker-php-ext-install -j$(nproc) gd  \
+	&& docker-php-ext-configure  zip   \
+	&& docker-php-ext-install zip  \
+	&& docker-php-ext-install xml
+
+RUN curl -sS https://getcomposer.org/installer |php \
+    && mv composer.phar /usr/local/bin/composer 
+
+ADD ./conf/uploads.ini /usr/local/etc/php/conf.d/
+
+ADD ./ /var/www/html/newtransflow
+RUN chown -R www-data:www-data /var/www/html/newtransflow
+WORKDIR /var/www/html/newtransflow

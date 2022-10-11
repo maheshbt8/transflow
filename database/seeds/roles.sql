@@ -1,0 +1,16 @@
+INSERT IGNORE INTO `roles` (`id`, `name`, `guard_name`,`label`, `created_at`, `updated_at`) VALUES
+(1, 'administrator', 'web','Super Admin', '2021-08-18 06:30:55', '2021-08-18 06:30:55'),
+(2, 'orgadmin', 'web','Organization Admin', '2021-08-18 06:30:57', '2021-08-18 06:30:57'),
+(3, 'suborgadmin', 'web','Sub organization', '2021-08-18 06:30:57', '2021-08-18 06:30:57'),
+(4, 'departmentadmin', 'web','Department', '2021-08-18 06:30:57', '2021-08-18 06:30:57'),
+(5, 'translator', 'web','Linguist', '2021-08-18 06:30:57', '2021-08-18 06:30:57'),
+(6, 'projectmanager', 'web','Project Manager', '2021-08-18 06:30:58', '2021-08-18 06:30:58'),
+(7, 'proofreader', 'web','Proof Reader', '2021-08-18 06:30:58', '2021-08-18 06:30:58'),
+(8, 'qualityanalyst', 'web','Quality Analyst', '2021-08-18 06:30:58', '2021-08-18 06:30:58'),
+(9, 'requester', 'web','Requester', '2021-08-18 06:30:58', '2021-08-18 06:30:58'),
+(10, 'approval', 'web','Approval', '2021-08-18 06:30:59', '2021-08-18 06:30:59'),
+(11, 'reviewer', 'web','Reviewer', '2021-08-18 06:30:59', '2021-08-18 06:30:59'),
+(12, 'clientuser', 'web','Client Admin', '2021-08-18 06:30:59', '2021-08-18 06:30:59'),
+(13, 'finance', 'web','Finance', '2021-10-28 06:12:49', '2021-10-28 06:12:49'),
+(14, 'sales', 'web','Sales', '2021-10-28 06:13:20', '2021-10-28 06:13:20'),
+(15, 'vendor', 'web','Remote Linguist', '2021-10-28 07:41:27', '2021-10-28 07:41:27');

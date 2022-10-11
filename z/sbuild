@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+DIMG=$(basename "$(pwd)")
+echo "Building image ${DIMG}:"
+docker-compose build
+if [ "$?" == 0 ]; then
+    echo "Image ${DIMG} build success!"
+else
+    echo "Image ${DIMG} build FAIL!"
+    exit 1
+fi

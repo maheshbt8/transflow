@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# essentially building a command here
+docker-compose up

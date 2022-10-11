@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+DIMG=$(basename "$(pwd)")
+docker-compose logs "${DIMG}" |& gzip - > "/home/ubuntu/logs/${DIMG}/$(date +"%Y_%d_%m").log.gz"
+docker-compose kill "${DIMG}"
+docker-compose rm -f
+
+docker-compose up -d
